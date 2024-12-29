@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "955102999311",
+    "project_id": "regintro",
+    "storage_bucket": "regintro.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955102999311:android:0f678d034900fd8a5c847a",
+        "android_client_info": {
+          "package_name": "com.example.application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgFRg6sNR0nsuKDhhDAF54zUMwbU9piF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

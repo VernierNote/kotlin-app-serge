@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="360dp"
+        android:layout_height="458dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#4F81B4"
+        android:backgroundTintMode="screen"
+        android:hapticFeedbackEnabled="false"
+        app:cardBackgroundColor="#99F6F6F6"
+        app:cardCornerRadius="20dp"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#FFFFFF"
+            android:hapticFeedbackEnabled="false">
+
+            <EditText
+                android:id="@+id/nickInput"
+                android:layout_width="282dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="120dp"
+                android:autofillHints=""
+                android:hint="@string/nick_name"
+                android:inputType="text"
+                android:textColorHint="#EAECF0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="282dp"
+                android:layout_height="53dp"
+                android:autofillHints=""
+                android:hint="@string/email"
+                android:inputType="text|textEmailAddress"
+                android:textColorHint="#EAECF0"
+                app:layout_constraintEnd_toEndOf="@+id/nickInput"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/nickInput"
+                app:layout_constraintTop_toBottomOf="@+id/nickInput" />
+
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="282dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="16dp"
+                android:autofillHints=""
+                android:hint="@string/password"
+                android:inputType="text|textPassword"
+                android:textColorHint="#EAECF0"
+                app:layout_constraintEnd_toEndOf="@+id/emailInput"
+                app:layout_constraintStart_toStartOf="@+id/emailInput"
+                app:layout_constraintTop_toBottomOf="@+id/emailInput" />
+
+            <TextView
+                android:id="@+id/forgetData"
+                android:layout_width="172dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/forgetTextView"
+                android:textAlignment="center"
+                android:textColor="#F6F1F1"
+                app:layout_constraintEnd_toEndOf="@+id/passwordInput"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="@+id/passwordInput"
+                app:layout_constraintTop_toBottomOf="@+id/passwordInput" />
+
+            <Button
+                android:id="@+id/buttonReg"
+                android:layout_width="142dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="60dp"
+                android:backgroundTint="#F6F3F3"
+                android:onClick="onClickAdd"
+                android:text="@string/registrationLogView"
+                android:textColor="#2E2A2A"
+                app:cornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/passwordInput"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/passwordInput"
+                app:layout_constraintTop_toBottomOf="@+id/passwordInput" />
+
+            <Button
+                android:id="@+id/buttonLog"
+                android:layout_width="135dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="60dp"
+                android:backgroundTint="#F6F3F3"
+                android:onClick="onClickAdd"
+                android:text="@string/enterButton"
+                app:cornerRadius="22dp"
+                app:layout_constraintEnd_toEndOf="@+id/passwordInput"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/passwordInput"
+                app:layout_constraintTop_toBottomOf="@+id/passwordInput" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="296dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="STALCRAFT POCKET APP"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#F2EDED"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
